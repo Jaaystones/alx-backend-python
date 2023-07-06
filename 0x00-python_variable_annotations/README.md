@@ -72,3 +72,7 @@ This project contains tasks for learning to use variable/type annotations in Pyt
 
   zoom_3x = zoom_array(array, 3.0)
   ```
+  
+# RESOURCES
+* [PYTHON3 TYPING DOC](https://docs.python.org/3/library/typing.html)
+* [MYPY CHEAT SHEET](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html)
