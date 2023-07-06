@@ -1,4 +1,4 @@
-<img align="center" alt="Coding" width="450" height="400" src=https://github.com/Jaaystones/alx-backend-python/assets/111044396/f5e84464-4ced-4c10-9255-24b959cbbcee>
+<img align="center" alt="Coding" width="650" height="500" src=https://github.com/Jaaystones/alx-backend-python/assets/111044396/f5e84464-4ced-4c10-9255-24b959cbbcee>
 
 
 
