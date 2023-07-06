@@ -1,3 +1,8 @@
+<img align="center" alt="Coding" width="450" height="400" src=https://github.com/Jaaystones/alx-backend-python/assets/111044396/f5e84464-4ced-4c10-9255-24b959cbbcee>
+
+
+
+
 # Variable (Type) Annotations
 
 This project contains tasks for learning to use variable/type annotations in Python 3.
