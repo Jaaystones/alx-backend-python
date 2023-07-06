@@ -1,6 +1,7 @@
 #!usr/bin/python3
 """ This codes shows a type-annotation"""
 
+
 def add(a: float, b: float) -> float:
     """
     Takes two float numbers as arguments and returns their sum as a float.
