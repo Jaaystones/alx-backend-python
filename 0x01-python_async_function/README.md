@@ -22,9 +22,10 @@ This project contains tasks for learning to use asynchronous code in Python 3.
 + [x] 4. **Tasks**<br/>[4-tasks.py](4-tasks.py) contains a script that meets the following requirements:
   + Take the code from `wait_n` and alter it into a new function `task_wait_n`. The code is nearly identical to `wait_n` except `task_wait_random` is being called.
 
+# RESOURCES
 * [Async IO in Python](https://realpython.com/async-io-python/)
 * [Asyncio](https://docs.python.org/3/library/asyncio.html)
 * [Random.uniform](https://docs.python.org/3/library/random.html#random.uniform)
 
-# Author: Jaaystones
+## Author: Jaaystones
 
