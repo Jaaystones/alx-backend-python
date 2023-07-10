@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-
+""" Task 1
+"""
 import asyncio
 from typing import List
 
-''' Import previous file
-'''
+
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
