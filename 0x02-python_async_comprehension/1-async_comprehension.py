@@ -1,22 +1,16 @@
 #!/usr/bin/env python3
-'''Import async_generator from the previous task
-and then write a coroutine called async_comprehension
-that takes no arguments.
-'''
-
+"""
+Use an asynchronous generator in an asynchronous list comprehension
+inside a coroutine
+"""
 from typing import List
-from importlib import import_module as using
+import asyncio
+import random
 
-
-async_generator = using('0-async_generator').async_generator
+async_generator = __import__('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
-    '''Coroutine that collects 10 random numbers using
-    an async comprehension over async_generator.
-    Returns the 10 random numbers.
-
-    Returns:
-        List[int]: List of 10 random numbers.
-    '''
-    return [num async for num in async_generator()]
+    """Create an asynchronous list comprehension and return the list"""
+    result = [i async for i in async_generator()]
+    return result
