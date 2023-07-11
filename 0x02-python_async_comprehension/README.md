@@ -15,3 +15,10 @@ This project contains tasks for learning to use asynchronous comprehensions in P
 + [x] 2. **Run time for four parallel comprehensions**<br/>[2-measure_runtime.py](2-measure_runtime.py) contains a script that meets the following requirements:
   + Import `async_comprehension` from the previous file and write a `measure_runtime` coroutine that will execute `async_comprehension` four times in parallel using `asyncio.gather`.
   + `measure_runtime` should measure the total runtime and return it.
+
+## Resources:book:
+* [PEP 530 – Asynchronous Comprehensions](https://peps.python.org/pep-0530/)
+* [What’s New in Python: Asynchronous Comprehensions / Generators](https://www.blog.pythonlibrary.org/2017/02/14/whats-new-in-python-asynchronous-comprehensions-generators/)
+* [Type-hints for generators](https://stackoverflow.com/questions/42531143/how-to-type-hint-a-generator-in-python-3)
+
+*AUTHOR* [Jaaystones]
