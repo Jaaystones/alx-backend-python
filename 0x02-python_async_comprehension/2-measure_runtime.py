@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-'''Task 2's module.
+'''write a measure_runtime coroutine that will execute async_comprehension
+four times in parallel using asyncio.gather
 '''
 import asyncio
 import time
