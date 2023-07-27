@@ -3,6 +3,7 @@
 """
 import unittest
 from typing import Dict, Tuple, Union
+from unittest.mock import patch, Mock
 from parameterized import parameterized
 
 
@@ -69,3 +70,45 @@ class TestAccessNestedMap(unittest.TestCase):
             access_nested_map(nested_map, path)
 
         self.assertEqual(str(cm.exception), expected_exception_msg)
+
+class TestGetJson(unittest.TestCase):
+    """
+    Test case for the get_json function.
+    """
+
+    @patch("requests.get")
+    @parameterized.expand([
+        ("http://example.com", {"payload": True}),
+        ("http://holberton.io", {"payload": False}),
+    ])
+    def test_get_json(self, test_url, test_payload):
+        """
+        Test that get_json returns the expected JSON data.
+
+        Parameters
+        ----------
+        test_url : str
+            The test URL to be used for mocking.
+        test_payload : Dict
+            The test JSON payload to be returned by the mock.
+
+        Returns
+        -------
+        None
+        """
+        """Mock the requests.get method to return
+        a mock response with the test payload"""
+        mock_response = Mock()
+        mock_response.json.return_value = test_payload
+        requests.get.return_value = mock_response
+
+        # Call the get_json function with the test URL
+        result = get_json(test_url)
+
+        """ Assert that the mocked get method was called 
+        once with the test URL as the argument."""
+        requests.get.assert_called_once_with(test_url)
+
+        """Assert that the output of get_json 
+        is equal to the test payload"""
+        self.assertEqual(result, test_payload)
