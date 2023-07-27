@@ -72,6 +72,7 @@ class TestAccessNestedMap(unittest.TestCase):
 
         self.assertEqual(str(cm.exception), expected_exception_msg)
 
+
 class TestGetJson(unittest.TestCase):
     """
     Test case for the get_json function.
@@ -102,14 +103,10 @@ class TestGetJson(unittest.TestCase):
         mock_response = Mock()
         mock_response.json.return_value = test_payload
         requests.get.return_value = mock_response
-
-        # Call the get_json function with the test URL
         result = get_json(test_url)
-
-        """ Assert that the mocked get method was called 
+        """ Assert that the mocked get method was called
         once with the test URL as the argument."""
         requests.get.assert_called_once_with(test_url)
-
-        """Assert that the output of get_json 
+        """Assert that the output of get_json
         is equal to the test payload"""
         self.assertEqual(result, test_payload)
