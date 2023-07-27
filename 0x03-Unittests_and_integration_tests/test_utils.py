@@ -17,9 +17,9 @@ class TestAccessNestedMap(unittest.TestCase):
         ({"a": {"b": 2}}, ("a", "b"), 2),
     ])
     def test_access_nested_map(
-            self, 
-            nested_map: Dict, 
-            path: Tuple[str], 
+            self,
+            nested_map: Dict,
+            path: Tuple[str],
             expected_result: Union[Dict, int]) -> None:
         """
         Test the access_nested_map function with different inputs.
@@ -29,7 +29,8 @@ class TestAccessNestedMap(unittest.TestCase):
         nested_map : Mapping
             A nested map (dictionary or any mapping object).
         path : Sequence
-            A sequence of keys representing a path to the value in the nested map.
+            A sequence of keys representing a path to the value
+            in the nested map.
         expected_result : Any
             The expected result when accessing the nested value.
 
@@ -38,16 +39,15 @@ class TestAccessNestedMap(unittest.TestCase):
         None
         """
         self.assertEqual(access_nested_map(nested_map, path), expected_result)
-   
-     @parameterized.expand([
+
+    @parameterized.expand([
         ({}, ("a",), "Key 'a' not found in the nested map."),
         ({"a": 1}, ("a", "b"), "Key 'b' not found in the nested map."),
-     ])
-
-      def test_access_nested_map_exception(
-              self, 
-              nested_map: Dict, 
-              path: Tuple[str], 
+    ])
+    def test_access_nested_map_exception(
+              self,
+              nested_map: Dict,
+              path: Tuple[str],
               expected_exception_msg: Exception) -> None:
         """
         Test that a KeyError is raised with the expected message.
@@ -57,7 +57,8 @@ class TestAccessNestedMap(unittest.TestCase):
         nested_map : Mapping
             A nested map (dictionary or any mapping object).
         path : Sequence
-            A sequence of keys representing a path to the value in the nested map.
+            A sequence of keys representing a path to the value
+            in the nested map.
         expected_exception_msg : str
             The expected exception message.
 
