@@ -104,3 +104,10 @@ This project contains tasks for learning to write unittests and integration test
   + Implement the `test_public_repos` method to test `GithubOrgClient.public_repos`.
   + Make sure that the method returns the expected results based on the fixtures.
   + Implement `test_public_repos_with_license` to test the `public_repos` with the argument `license="apache-2.0"` and make sure the result matches the expected value from the fixtures.
+
+## Resources:book:
+* [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
+* [unittest.mock — mock object library](https://docs.python.org/3/library/unittest.mock.html)
+* [How to mock a readonly property with mock?](https://stackoverflow.com/questions/11836436/how-to-mock-a-readonly-property-with-mock)
+* [parameterized](https://pypi.org/project/parameterized/)
+* [Memoization](https://en.wikipedia.org/wiki/Memoization)
