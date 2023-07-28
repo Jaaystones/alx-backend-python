@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A module for testing client module.
+"""A module for testing a client module.
 """
 import unittest
 from typing import Dict
